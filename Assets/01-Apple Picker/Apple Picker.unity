@@ -183,8 +183,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -309,6 +309,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2043758215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3707169463801148845, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+  m_PrefabInstance: {fileID: 957019390720953882}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043758217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043758215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2d89eb6b680624facac9a88a221abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 7744725605061175263, guid: 55936999191c2d2479044bc695bd8d24, type: 3}
+  speed: 10
+  leftAndRightEdge: 20
+  chanceToChangeDirection: 0.02
+  secondsBetweenAppleDrop: 1
 --- !u!1001 &957019390720953882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -317,13 +339,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2241081276868973151, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2967614560424160025, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2967614560424160025, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2967614560424160025, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
       propertyPath: m_LocalPosition.z
@@ -361,10 +387,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 3707169463801148845, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580534710842896738, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033799342715744050, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3707169463801148845, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2043758217}
   m_SourcePrefab: {fileID: 100100000, guid: eec12d7e8b06d314493fb99b56db9d26, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
