@@ -17,7 +17,7 @@ static public int score = 1000; //a
     void Update()
     {
       Text gt = this.GetComponent<Text>();
-      gt.text = "High Score: "+score;
+        gt.text = "High Score: " + score;
       // Update the PlayerPrefs HighScore if necessary
       if (score > PlayerPrefs.GetInt("HighScore")) {
         PlayerPrefs.SetInt("HighScore", score);
