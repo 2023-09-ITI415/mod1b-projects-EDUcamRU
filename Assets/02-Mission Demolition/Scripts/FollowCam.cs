@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowCam : MonoBehaviour {
-  static pubic GameObject POI;
+  static public GameObject POI;
 
   [Header("Set Dynamically")]
   public float camZ;
@@ -19,7 +19,7 @@ public class FollowCam : MonoBehaviour {
   //Get the position of the POI
   Vector3 destination = POI.transform.position;
   //force destination.z to be camZ to keep the camera far enough away
-  destination.z = camZ
+  destination.z = camZ;
   //set camera transform to the destination
   transform.position = destination;
   }
