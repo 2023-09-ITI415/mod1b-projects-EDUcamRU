@@ -14,7 +14,7 @@ public class Slingshot : MonoBehaviour {
   private Rigidbody projectileRigidbody;
 
   void Awake() {
-    Transform launchPointTrans = transform.FindChild("LaunchPoint");
+    Transform launchPointTrans = transform.Find("LaunchPoint");
     launchPoint = launchPointTrans.gameObject;
     launchPoint.SetActive(false); //b
     launchPos = launchPointTrans.position;

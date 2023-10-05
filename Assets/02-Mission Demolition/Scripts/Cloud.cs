@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cloud : MonoBehaviour
 {
 	[Header("Set in Inspector")]
-	public GameObject 	cloudSphere;
+	public GameObject cloudSphere;
 	public int 	numSpheresMin = 6;
 	public int 	numSpheresMax = 10;
 	public Vector3 	sphereOffsetScale = new Vector3(5,2,1);
@@ -58,7 +58,7 @@ public class Cloud : MonoBehaviour
     }
 
     void Restart() {
-    	// Clear out old spheres 
+    	// Clear out old spheres
     	foreach (GameObject sp in spheres) {
     		Destroy(sp);
     	}
